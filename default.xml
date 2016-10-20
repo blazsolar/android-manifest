@@ -5,7 +5,8 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <remote  name="github"
-           fetch="git@github.com" />
+           fetch="ssh://git@github.com"
+           revision="refs/heads/master" />
   
   <default revision="android-support-test"
            remote="aosp"
@@ -36,7 +37,7 @@
         <copyfile src="gradlew" dest="gradlew" />
   </project>
   <project path="frameworks/uiautomator" name="platform/frameworks/uiautomator" />
-  <project path="frameworks/mockito" name="blazsolar/AndroidMockitoRunner" remote="github" revision="refs/heads/master" />
+  <project path="frameworks/mockito" name="blazsolar/AndroidMockitoRunner" remote="github" />
   <project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" />
