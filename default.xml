@@ -33,6 +33,7 @@
   <project path="frameworks/testing" name="platform/frameworks/testing" >
         <linkfile src="build.gradle" dest="build.gradle" />
         <linkfile src="settings.gradle" dest="settings.gradle" />
+        <linkfile src="version.gradle" dest="version.gradle" />
         <linkfile src="local.properties" dest="local.properties" />
         <copyfile src="gradlew" dest="gradlew" />
   </project>
